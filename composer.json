@@ -1,0 +1,32 @@
+{
+    "name": "itfengfanzhe/dcat-admin-category",
+    "alias": "",
+    "description": "dcat后台分类扩展",
+    "type": "library",
+    "keywords": ["dcat-admin", "extension", "category"],
+    "homepage": "https://github.com/dcat-admin/category",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "张建伟",
+            "email": "itfengfanzhe@163.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "dcat/laravel-admin": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dcat\\Admin\\Category\\": "src/"
+        }
+    },
+    "extra": {
+        "dcat-admin": "Dcat\\Admin\\Category\\CategoryServiceProvider",
+        "laravel": {
+            "providers": [
+                "Dcat\\Admin\\Category\\CategoryServiceProvider"
+            ]
+        }
+    }
+}
